@@ -5,6 +5,7 @@
     display: flex;                
     align-items: center;
     padding: 0 10px;
+    border: solid 1px black;
 }
 
 #searchbar{ 
@@ -35,4 +36,62 @@ h1{
 
 body{
     background-color: rgb(255, 78, 0);
+}
+
+.cover_area{
+    background-color:transparent;
+    min-height: 400px;
+    width: 800px;
+    margin: auto;
+}
+
+.cover_page{
+    background-color:transparent;
+    text-align: center;
+    color: white;
+}
+
+#prof_pic{
+    width: 150px;
+    margin-top: 170px; 
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+#name{
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;             /* Enable flexbox */
+    justify-content: center;   /* Center buttons horizontally */
+    gap: 20px; 
+    background-color: black;
+}
+
+.menu_buttons{
+    width: 100px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;        /* Rounded corners for buttons */
+    cursor: pointer;
+}
+
+.center_container{
+    background-color: green;
+    min-height: 400px;
+    flex: 2.5;
+}
+
+.left_container{
+    background-color: blue;
+    min-height: 400px;
+    flex: 1;
+}
+
+.right_container{
+    background-color: white;
+    min-height: 400px;
+    flex: 1.5;
 }
