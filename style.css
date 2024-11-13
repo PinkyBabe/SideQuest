@@ -216,11 +216,12 @@ textarea{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    justify-content: center;
     
 }
 
 /* Background */
-body.signup-container {
+.signup-container {
     background-color: #fffaf0;
     display: flex;
     justify-content: center;
@@ -499,3 +500,69 @@ ul li::before {
     color: #2e76d1;
 }
 
+/* Writing page */
+.Wbody {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styling */
+.Wh1 {
+    font-size: 2.5em;
+    color: #e13f29;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.Wp {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 1em;
+}
+
+/* List Styling */
+.Wul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Wul li {
+    font-size: 1.1em;
+    padding: 0.8em 1em;
+    background-color: #fff;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for list items */
+.Wul li:hover {
+    background-color: #ffede6;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* List Item Icon */
+.Wul li::before {
+    content: "✍️";
+    font-size: 1.5em;
+    margin-right: 12px;
+    color: #e13f29;
+}
