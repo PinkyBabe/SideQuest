@@ -300,3 +300,67 @@ body.signup-container {
 .login-link a:hover {
     text-decoration: underline;
 }
+/* General Styling */
+.Pbody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.Ph1 {
+    font-size: 2.5em;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+/* Paragraph Styling */
+.Pp {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+/* List Styling */
+.Pul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+}
+
+.Pul li {
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    margin: 0.3em 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Pul li:hover {
+    background-color: #e1e7ef;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* List Item Icon */
+.Pul li::before {
+    content: "💻";
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #ff6600;
+}
