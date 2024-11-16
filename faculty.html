@@ -11,7 +11,9 @@
     <!--top area-->
     <div class="box">
         <h1>SIDEQUEST <input id="searchbar" type="text" placeholder="Search for a job type"> </h1>
-        <img id="dp" src="https://tse2.mm.bing.net/th?id=OIP.yYUwl3GDU07Q5J5ttyW9fQHaHa&pid=Api&P=0&h=220" alt="">
+        <img id="dp" src="https://tse2.mm.bing.net/th?id=OIP.yYUwl3GDU07Q5J5ttyW9fQHaHa&pid=Api&P=0&h=220" alt="User Icon" 
+        onclick="showLogoutConfirmation()" 
+        style="cursor: pointer;">
     </div>
 
 
@@ -137,6 +139,12 @@
         </section>
 
         </div>
+        <div id="logout-confirmation" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+       <p>Are you sure you want to log out?</p>
+       <button onclick="logout()">Yes</button>
+       <button onclick="hideLogoutConfirmation()">No</button>
+   </div>
 </body>
 
 <script src="faculty.js"></script>
