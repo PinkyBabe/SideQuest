@@ -11,7 +11,7 @@ function navigateTo(page) {
 }
 
 // Initial navigation to the home page
-navigateTo('home');
+navigateTo('profile');
 
 // Function to accept work and move the post to the Workspace section
 function acceptWork(button) {
@@ -52,25 +52,25 @@ function navigateTo(sectionId) {
         section.style.display = section.id === sectionId ? 'block' : 'none';
     });
 }
-        // Function to navigate between sections
-        function navigateTo(sectionId) {
-            document.querySelectorAll('.container').forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(sectionId).style.display = 'block';
-        }
+// Function to navigate between sections
+function navigateTo(sectionId) {
+    document.querySelectorAll('.container').forEach(section => {
+        section.style.display = 'none';
+    });
+    document.getElementById(sectionId).style.display = 'block';
+}
 
-        // Function to show the logout confirmation dialog
-        function showLogoutConfirmation() {
-            document.getElementById('logout-confirmation').style.display = 'block';
-        }
+// Function to show the logout confirmation dialog
+function showLogoutConfirmation() {
+    document.getElementById('logout-confirmation').style.display = 'block';
+}
 
-        // Function to hide the logout confirmation dialog
-        function hideLogoutConfirmation() {
-            document.getElementById('logout-confirmation').style.display = 'none';
-        }
+// Function to hide the logout confirmation dialog
+function hideLogoutConfirmation() {
+    document.getElementById('logout-confirmation').style.display = 'none';
+}
 
-        // Function to log out and redirect to the log-in page
-        function logout() {
-            window.location.href = 'index.html'; // Redirect to login page
-        }
+// Function to log out and redirect to the log-in page
+function logout() {
+    window.location.href = 'index.html'; // Redirect to login page
+}
